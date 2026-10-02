@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <!-- ✅ CSS LINK GOES HERE -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<form action="/register" method="POST" enctype="multipart/form-data">
+
+<% if(errors.length){ %>
+<ul>
+<% errors.forEach(e=>{ %>
+<li><%= e.msg %></li>
+<% }) %>
+</ul>
+<% } %>
+
+Username: <input name="username" value="<%= old.username||'' %>"><br>
+Email: <input name="email" value="<%= old.email||'' %>"><br>
+
+Password: <input type="password" name="password"><br>
+Confirm: <input type="password" name="confirm"><br>
+
+Gender:
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female<br>
+
+Hobbies:
+<input type="checkbox" name="hobbies" value="Reading">Reading
+<input type="checkbox" name="hobbies" value="Sports">Sports<br>
+
+Profile: <input type="file" name="profile"><br>
+Others: <input type="file" name="others" multiple><br>
+
+<button>Submit</button>
+
+</form>
+
+</body>
+</html>

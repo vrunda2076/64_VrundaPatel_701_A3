@@ -1,0 +1,9 @@
+<h2>Data</h2>
+
+Username: <%= data.username %><br>
+Email: <%= data.email %><br>
+
+<% if(data.profile){ %>
+<img src="/<%= data.profile %>" width="100">
+<a href="/download/<%= data.profile %>">Download</a>
+<% } %>

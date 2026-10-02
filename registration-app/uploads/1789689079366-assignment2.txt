@@ -1,0 +1,11 @@
+.NET
+
+Assignment 2
+
+1.create a Blazor application to demonstrate collection data to the user of your own choice.
+2.call create a Blazor application with components and create with/without parameters to show complex object collection.
+3.create a Blazor application to show component based dashboard to the user.
+4.create a intrective  Blazor component to take a user input and display all user inputs in the collection.
+
+
+
